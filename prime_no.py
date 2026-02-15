@@ -1,7 +1,7 @@
 #prime number
 
 
-no=int(input("Enter a number :-"))
+#no=int(input("Enter a number :-"))
 
 # unit_pl= no%10
 # once_pl = no/10
@@ -15,8 +15,19 @@ def is_prime(num):
             return False
     return True
 
-if(is_prime(no)):
-    print("prime number")
-else:
-    print("not prime number")
+# if(is_prime(no)):
+#     print("prime number")
+# else:
+#     print("not prime number")
 
+def prime_numbers_in_range(start, end):
+    primes = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            primes.append(num)
+    return primes
+
+i = int(input("Enter the start of the range: "))
+j = int(input("Enter the end of the range: "))
+primes_in_range = prime_numbers_in_range(i, j)
+print(f"Prime numbers between {i} and {j}: {primes_in_range}")
