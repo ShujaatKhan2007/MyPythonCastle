@@ -15,11 +15,6 @@ def is_prime(num):
             return False
     return True
 
-# if(is_prime(no)):
-#     print("prime number")
-# else:
-#     print("not prime number")
-
 def prime_numbers_in_range(start, end):
     primes = []
     for num in range(start, end + 1):
